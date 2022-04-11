@@ -1,0 +1,74 @@
+{
+    "name": "Database\\Factories\\UserFactory",
+    "line": 11,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "extends": [
+            [
+                "\\Illuminate\\Database\\Eloquent\\Factories\\Factory<\\App\\Models\\User>"
+            ]
+        ]
+    },
+    "namespace": "Database\\Factories",
+    "file": "\/home\/andrew\/Development\/creative-library\/database\/factories\/UserFactory.php",
+    "relative_file": "\/creative-library\/database\/factories\/UserFactory.php",
+    "hash": "9e4e6bf1920b6d5b1c718a9e841e4dfe89522d15",
+    "parent": "Illuminate\\Database\\Eloquent\\Factories\\Factory",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "Factory": "Illuminate\\Database\\Eloquent\\Factories\\Factory",
+        "Str": "Illuminate\\Support\\Str"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "definition": {
+            "name": "definition",
+            "line": 18,
+            "short_desc": "Define the model's default state.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Database\\Factories\\array<string,mixed>",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "unverified": {
+            "name": "unverified",
+            "line": 34,
+            "short_desc": "Indicate that the model's email address should be unverified.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "Database\\Factories\\UserFactory",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

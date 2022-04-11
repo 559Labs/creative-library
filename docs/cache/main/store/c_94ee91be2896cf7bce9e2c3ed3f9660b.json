@@ -1,0 +1,51 @@
+{
+    "name": "App\\Http\\Middleware\\TrustHosts",
+    "line": 7,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Http\\Middleware",
+    "file": "\/home\/andrew\/Development\/creative-library\/app\/Http\/Middleware\/TrustHosts.php",
+    "relative_file": "\/creative-library\/app\/Http\/Middleware\/TrustHosts.php",
+    "hash": "0c45fbb4f1f8fde88b00736cde6e0a144dbfe2c0",
+    "parent": "Illuminate\\Http\\Middleware\\TrustHosts",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "Middleware": "Illuminate\\Http\\Middleware\\TrustHosts"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "hosts": {
+            "name": "hosts",
+            "line": 14,
+            "short_desc": "Get the host patterns that should be trusted.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "App\\Http\\Middleware\\array<int,string",
+                    false
+                ],
+                [
+                    "App\\Http\\Middleware\\null>",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}
