@@ -1,5 +1,5 @@
 <?php
-
+54
 use Doctum\Doctum;
 use Doctum\RemoteRepository\GitHubRemoteRepository;
 use Doctum\Version\GitVersionCollection;
@@ -23,7 +23,8 @@ $versions = GitVersionCollection::create($dir)
     // To change this, use: `$versions->setFilter(static function (string $version): bool { // ... });`
     // ->addFromTags('v2.0.*')
     // ->add('2.0', '2.0 branch')
-    ->add('main', 'Main Branch')
+
+    // ->add('main', 'Main Branch')
     ->add("develop", "Development Branch");
 
 $dirs  =[
@@ -31,7 +32,6 @@ $dirs  =[
     "cache" => $dir . "docs/cache/%version%",
     "source" => $dir,
 ];
-var_dump($dirs);
 
 return new Doctum($iterator, [
     'versions'             => $versions,

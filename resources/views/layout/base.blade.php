@@ -9,11 +9,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Lora&family=Nunito&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="{{ asset('s/app.css') }}">
+        <script src="{{ asset('s/app.js') }}" defer></script>
     </head>
     <body class="font-sans antialiased">
         <div class="min-h-screen bg-gray-100">
+            <x-nav-main></x-nav-main>
             @yield("main")
+            <x-nav-footer></x-nav-footer>
         </div>
-        <script src="{{ asset('s/app.js') }}" defer></script>
     </body>
 </html>
