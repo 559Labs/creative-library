@@ -1,0 +1,48 @@
+{
+    "name": "Database\\Seeders\\DatabaseSeeder",
+    "line": 8,
+    "short_desc": null,
+    "long_desc": null,
+    "hint": null,
+    "tags": [],
+    "namespace": "Database\\Seeders",
+    "file": "\/home\/andrew\/Development\/creative-library\/database\/seeders\/DatabaseSeeder.php",
+    "relative_file": "\/creative-library\/database\/seeders\/DatabaseSeeder.php",
+    "hash": "279304b9a6ca69c82d01e8440f840cd91aecddca",
+    "parent": "Illuminate\\Database\\Seeder",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "is_read_only": false,
+    "aliases": {
+        "WithoutModelEvents": "Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents",
+        "Seeder": "Illuminate\\Database\\Seeder"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "run": {
+            "name": "run",
+            "line": 15,
+            "short_desc": "Seed the application's database.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "see": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}
