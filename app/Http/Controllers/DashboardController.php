@@ -8,6 +8,6 @@ class DashboardController extends Controller
 {
     public function home(Request $r)
     {
-        return view("dashboard");
+        return view("secure.dashboard");
     }
 }

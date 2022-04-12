@@ -8,7 +8,8 @@ class PageController extends Controller
 {
     public function home(Request $r)
     {
-        return view("home");
+        $data = [];
+        return view("public.home", $data);
     }
 
 }
