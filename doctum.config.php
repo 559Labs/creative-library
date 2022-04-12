@@ -1,5 +1,5 @@
 <?php
-54
+
 use Doctum\Doctum;
 use Doctum\RemoteRepository\GitHubRemoteRepository;
 use Doctum\Version\GitVersionCollection;
