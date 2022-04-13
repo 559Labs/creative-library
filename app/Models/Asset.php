@@ -8,18 +8,19 @@ use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 use Spatie\Activitylog\Traits\LogsActivity;
 use Spatie\Activitylog\LogOptions;
+use Spatie\Tags\HasTags;
+use App\Models\Traits\AssetAccessors;
+use App\Models\Traits\AssetRelations;
 
 class Asset extends Model
 {
-    use HasFactory, HasSlug, LogsActivity;
+    use HasFactory, // Base Traits
+        HasSlug, LogsActivity, HasTags, // Integrated Packages
+        AssetAccessors, AssetRelations; // Organized Traits
 
     protected $fillable = [
         'name', 'slug',
     ];
-
-    // Tags
-    // Media Library
-
 
     /**
      * Get the options for generating the slug.
@@ -28,6 +29,7 @@ class Asset extends Model
     {
         return SlugOptions::create()
             ->generateSlugsFrom('name')
+            ->saveSlugsTo("slug")
             ->doNotGenerateSlugsOnUpdate();
     }
 
