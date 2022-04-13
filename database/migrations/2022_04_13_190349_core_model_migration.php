@@ -25,6 +25,8 @@ return new class extends Migration
             function(Blueprint $t) {
                 $t->id();
                 $t->timestamps();
+                $t->string('name');
+                $t->string('slug');
             }
         );
 
