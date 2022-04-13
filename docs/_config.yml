@@ -1,26 +1,25 @@
 title: Creative Library
 description: >- # this means to ignore newlines until "baseurl:"
   A Laravel-based framework for launching a creative library app.
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: 
+
 github_username:  559labs
+show_downloads: false
 
-# Build settings
 
-remote_theme: pages-themes/minimal@v0.2.0
+# remote_theme: pages-themes/minimal@v0.2.0
+
+theme: jekyll-theme-minimal
+
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+- jekyll-remote-theme 
 - jekyll-feed
 
 defaults:
   - scope:
     path: "build"
-
-header_pages:
-  - index.md
-  - spec/index.md
-
 
 # exclude:
 #   - .sass-cache/
