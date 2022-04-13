@@ -1,5 +1,6 @@
 ---
-layout: _default
-
+title: Home Page
+layout: page
 ---
 
+Content
