@@ -1,4 +1,4 @@
-@extends("layouts.base")
+@extends("layout.base")
 @section("main")
-Secure
-@sectionend
+{{ $slot }}
+@endsection

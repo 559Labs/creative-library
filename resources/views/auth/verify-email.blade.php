@@ -1,10 +1,6 @@
-<x-guest-layout>
-    <x-auth-card>
-        <x-slot name="logo">
-            <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
-            </a>
-        </x-slot>
+<x-layout.public>
+    <x-auth.card>
+
 
         <div class="mb-4 text-sm text-gray-600">
             {{ __('Thanks for signing up! Before getting started, could you verify your email address by clicking on the link we just emailed to you? If you didn\'t receive the email, we will gladly send you another.') }}
@@ -17,13 +13,13 @@
         @endif
 
         <div class="mt-4 flex items-center justify-between">
-            <form method="POST" action="{{ route('verification.send') }}">
+            <form method="POST" action="{{ route('auth.secure.verification.send') }}">
                 @csrf
 
                 <div>
-                    <x-button>
+                    <x-atoms.button>
                         {{ __('Resend Verification Email') }}
-                    </x-button>
+                    </x-atoms.button>
                 </div>
             </form>
 
@@ -35,5 +31,5 @@
                 </button>
             </form>
         </div>
-    </x-auth-card>
-</x-guest-layout>
+    </x-auth.card>
+</x-layout.public>
