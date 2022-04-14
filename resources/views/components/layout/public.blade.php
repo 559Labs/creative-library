@@ -1,4 +1,4 @@
-@extends("layouts.base")
+@extends("components.layout.base")
 @section("main")
-Public
-@sectionend
+{{ $slot }}
+@endsection
