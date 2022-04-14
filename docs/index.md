@@ -1,9 +1,6 @@
 ---
-layout: home
-
+title: Home Page
+layout: page
 ---
 
-**Generated API**
-
-- [Develop Branch](build/develop/index.html)
-- [Main Branch](build/main/index.html)
+Content

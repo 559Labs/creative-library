@@ -1,3 +1,3 @@
-<x-layout-public>
+<x-layout.public>
     Public Home
-</x-layout-public>
+</x-layout.public>
