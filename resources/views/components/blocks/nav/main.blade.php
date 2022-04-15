@@ -8,11 +8,13 @@
             <div class="flex">
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('public.home') }}">
-                        [LOGO]
+                        <div class="w-12 h-12">@include('components.logo')</div>
                     </a>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    [NAV LINKS]
+                    @foreach ($navitems as $uri => $label)
+                    <x-atoms.nav-link href="{{ $uri }}">{{ $label }}</x-atoms.nav-link>
+                    @endforeach
                 </div>
             </div>
 

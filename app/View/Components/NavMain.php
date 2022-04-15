@@ -6,6 +6,8 @@ use Illuminate\View\Component;
 
 class NavMain extends Component
 {
+    public $navitems;
+
     /**
      * Create a new component instance.
      *
@@ -13,7 +15,13 @@ class NavMain extends Component
      */
     public function __construct()
     {
-        //
+        $this->navitems = [
+            "#url1" => __("Link 1"),
+            "#uri2" => __("Link 2"),
+            "#uri3" => __("Link 3"),
+            "#uri4" => __("Link 4"),
+            "#uri5" => __("Link 5"),
+        ];
     }
 
     /**
