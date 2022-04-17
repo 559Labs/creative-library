@@ -9,33 +9,34 @@ entries:
 
   - title: Overview
     output: web
-    # folderitems:
-    # - title: Page 1
-    #   url: index.html
-    #   output: web
-    # - title: Page 2
-    #   url: #
-    #   output: web
+    folderitems:
+    - title: Intro
+      url: /index.html
+      output: web
+
+  - title: Design
+    output: web
+    folderitems:
+    - title: Intro
+      url: /design.html
+      output: web
 
   - title: Data Schema
     output: web
     folderitems:
-    - title: Table List
-      url: schema_index.html
+    - title: Intro
+      url: /schema.html
       output: web
-    - title: Page 2
-      url: #
+    - title: Content
+      url: /schema-content.html
+      output: web
+    - title: Framework
+      url: /schema-framework.html
+      output: web
+    - title: Accounts
+      url: /schema-accounts.html
       output: web
 
-  - title: UX/Design
-    output: web
-    folderitems:
-    - title: Page 1
-      url: #
-      output: web
-    - title: Page 2
-      url: #
-      output: web
 
   # - title: Products
   #   output: web
