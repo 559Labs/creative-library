@@ -11,7 +11,7 @@ use App\Http\Controllers\Auth\VerifyEmailController;
 use Illuminate\Support\Facades\Route;
 
 Route::name("auth.")->prefix("account")->group(function () {
-    
+
     Route::name("guest.")->middleware("guest")->group(function () {
         Route::get("register", [RegisteredUserController::class, "create"])->name("register");
         Route::post("register", [RegisteredUserController::class, "store"])->name("register.post");
@@ -28,7 +28,7 @@ Route::name("auth.")->prefix("account")->group(function () {
     });
 
     Route::name("secure.")->middleware("auth")->group(function () {
-        Route::name("verification")->prefix("verify")->group(function () {
+        Route::name("verification.")->prefix("verify")->group(function () {
             Route::get("", [EmailVerificationPromptController::class, "__invoke"])->name("notice");
             Route::get("{id}/{hash}", [VerifyEmailController::class, "__invoke"])->middleware(["signed", "throttle:6,1"])->name("verify");
         });
